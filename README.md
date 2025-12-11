@@ -52,9 +52,15 @@ It is the same process as [Neon Launchpad](https://neon.new).
 > Claimable databases expire in 72 hours.
 
 
-## Setting up Clerk
+## Setting up Firebase Authentication
 
-- Set the `VITE_CLERK_PUBLISHABLE_KEY` in your `.env.local`.
+1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+2. Enable Authentication in your Firebase project
+3. Copy `.env.example` to `.env.local`
+4. Add your Firebase configuration values to `.env.local`:
+   - **Client-side config**: Get from Firebase Console > Project Settings > General
+   - **Server-side config**: Get from Firebase Console > Project Settings > Service Accounts > Generate new private key
+5. The project uses Firebase Auth with server-side verification via Firebase Admin SDK
 
 
 ## Shadcn

@@ -1,5 +1,5 @@
 {
-  "projectName": "clerk-start-drizzle-neon-base",
+  "projectName": "firebaseauth-start-drizzle-neon-base",
   "mode": "file-router",
   "typescript": true,
   "tailwind": true,
@@ -15,7 +15,7 @@
   "chosenAddOns": [
     "eslint",
     "neon",
-    "clerk",
+    "firebase",
     "drizzle",
     "shadcn",
     "form",

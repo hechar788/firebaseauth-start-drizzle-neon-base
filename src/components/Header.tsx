@@ -1,14 +1,11 @@
 import { Link } from '@tanstack/react-router'
 
-import ClerkHeader from '../integrations/clerk/header-user.tsx'
-
 import { useState } from 'react'
 import {
   ChevronDown,
   ChevronRight,
   ClipboardType,
   Database,
-  Globe,
   Home,
   Menu,
   Network,
@@ -89,19 +86,6 @@ export default function Header() {
           >
             <Database size={20} />
             <span className="font-medium">Neon</span>
-          </Link>
-
-          <Link
-            to="/clerk"
-            onClick={() => setIsOpen(false)}
-            className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-800 transition-colors mb-2"
-            activeProps={{
-              className:
-                'flex items-center gap-3 p-3 rounded-lg bg-cyan-600 hover:bg-cyan-700 transition-colors mb-2',
-            }}
-          >
-            <Globe size={20} />
-            <span className="font-medium">Clerk</span>
           </Link>
 
           <Link
@@ -284,7 +268,7 @@ export default function Header() {
         </nav>
 
         <div className="p-4 border-t border-gray-700 bg-gray-800 flex flex-col gap-2">
-          <ClerkHeader />
+          {/* Auth component will go here */}
         </div>
       </aside>
     </>

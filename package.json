@@ -1,5 +1,5 @@
 {
-  "name": "clerk-start-drizzle-neon-base",
+  "name": "firebaseauth-start-drizzle-neon-base",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,7 +17,6 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
-    "@clerk/clerk-react": "^5.49.0",
     "@faker-js/faker": "^10.0.0",
     "@neondatabase/serverless": "^1.0.0",
     "@neondatabase/vite-plugin-postgres": "^0.5.0",
@@ -40,6 +39,8 @@
     "clsx": "^2.1.1",
     "drizzle-kit": "^0.30.0",
     "drizzle-orm": "^0.39.0",
+    "firebase": "^12.6.0",
+    "firebase-admin": "^13.6.0",
     "lucide-react": "^0.544.0",
     "pg": "^8.11.0",
     "react": "^19.2.0",
