@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 import { useQuery, useMutation } from '@tanstack/react-query'
 
-export const Route = createFileRoute('/_clientAuthed/tanstack-query')({
+export const Route = createFileRoute('/_authed/tanstack-query')({
   component: TanStackQueryDemo,
 })
 

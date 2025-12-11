@@ -15,7 +15,7 @@ const todos = [
   },
 ]
 
-export const Route = createFileRoute('/_clientAuthed/api/tq-todos')({
+export const Route = createFileRoute('/_authed/api/tq-todos')({
   server: {
     handlers: {
       GET: () => {

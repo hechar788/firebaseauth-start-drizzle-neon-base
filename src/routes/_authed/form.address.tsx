@@ -2,7 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import { useAppForm } from '@/hooks/demo.form'
 
-export const Route = createFileRoute('/_clientAuthed/form/address')({
+export const Route = createFileRoute('/_authed/form/address')({
   component: AddressForm,
 })
 

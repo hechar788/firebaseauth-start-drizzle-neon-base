@@ -28,7 +28,7 @@ const insertTodo = createServerFn({
     await client.query(`INSERT INTO todos (title) VALUES ($1)`, [data.title])
   })
 
-export const Route = createFileRoute('/_clientAuthed/neon')({
+export const Route = createFileRoute('/_authed/neon')({
   component: App,
   loader: async () => {
     const todos = await getTodos()

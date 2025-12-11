@@ -3,7 +3,7 @@ import { useStore } from '@tanstack/react-store'
 
 import { fullName, store } from '@/lib/demo-store'
 
-export const Route = createFileRoute('/_clientAuthed/store')({
+export const Route = createFileRoute('/_authed/store')({
   component: DemoStore,
 })
 

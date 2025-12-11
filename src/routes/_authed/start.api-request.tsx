@@ -6,7 +6,7 @@ function getNames() {
   return fetch('/api/names').then((res) => res.json() as Promise<string[]>)
 }
 
-export const Route = createFileRoute('/_clientAuthed/start/api-request')({
+export const Route = createFileRoute('/_authed/start/api-request')({
   component: Home,
 })
 
